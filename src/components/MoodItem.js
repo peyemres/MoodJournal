@@ -50,7 +50,6 @@ const MoodItem = ({ item }) => {
         <Text style={styles.moodEmoji}>{item.mood}</Text>
       </View>
       
-      {/* ... textContainer ve actions aynı ... */}
       <View style={styles.textContainer}>
         <Text style={styles.date}>{item.date}</Text>
         <Text style={styles.text} numberOfLines={2}>{item.text}</Text>
