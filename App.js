@@ -28,7 +28,7 @@ export default function App() {
             component={HomeScreen} 
             options={({ navigation }) => ({ 
               title: 'Günlüğüm',
-              // 2. SAĞ ÜST KÖŞEYE AYARLAR BUTONU EKLEME
+              // SAĞ ÜST KÖŞEYE AYARLAR BUTONU EKLEME
               headerRight: () => (
                 <TouchableOpacity 
                   onPress={() => navigation.navigate('Settings')}
@@ -41,14 +41,14 @@ export default function App() {
             })} 
           />
 
-          {/* 3. Ekleme Sayfası */}
+          {/* Ekleme Sayfası */}
           <Stack.Screen 
             name="AddEntry" 
             component={AddEntryScreen} 
             options={{ title: 'Yeni Ekle' }}    
           />
           
-          {/* 4. Yeni sayfayı Stack'e ekle */}
+          {/* Yeni sayfayı Stack'e ekle */}
           <Stack.Screen 
             name="Settings" 
             component={SettingsScreen} 
